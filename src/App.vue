@@ -4,6 +4,12 @@
       <div class="app-container">
         <header class="app-header dark-brown">
           <h1>My Pet Store</h1>
+          <v-toolbar>
+            <v-toolbar-items>
+              <v-btn to="/" text>Home</v-btn>
+              <v-btn to="/pets" text>Pets</v-btn>
+            </v-toolbar-items>
+          </v-toolbar>
           <v-btn @click="themeSwitched = !themeSwitched">Switch Theme</v-btn>
         </header>
         <router-view></router-view>
